@@ -1,6 +1,6 @@
 package com.vali.notifications.exceptions;
 
-public class CustomDatabaseException extends RuntimeException{
+public class CustomDatabaseException extends RuntimeException {
 
     private final String message;
 

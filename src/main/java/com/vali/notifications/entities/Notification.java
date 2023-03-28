@@ -10,7 +10,9 @@ public class Notification {
     private String message;
     private Boolean hasBeenRead;
 
-    public Notification(){}
+    public Notification() {
+    }
+
     public Notification(Integer notificationId, Integer userId, Date timeStamp, String message, Boolean hasBeenRead) {
         this.notificationId = notificationId;
         this.userId = userId;

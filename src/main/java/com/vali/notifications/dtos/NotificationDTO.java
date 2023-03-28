@@ -7,7 +7,8 @@ public class NotificationDTO {
     private Date timeStamp;
     private String message;
 
-    public NotificationDTO(){}
+    public NotificationDTO() {
+    }
 
     public NotificationDTO(Integer userId, Date timeStamp, String message) {
         this.userId = userId;
