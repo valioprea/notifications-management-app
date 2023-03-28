@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "6a1d59b0-2ade-4a8e-be64-5176c722af8f",
+		"name": "DoorDeck",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24460074"
+	},
+	"item": [
+		{
+			"name": "POST Notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"userId\": 2,\r\n        \"timeStamp\": \"2005-09-08\",\r\n        \"message\": \"this is my message\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Notification",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"userId\": 2,\r\n        \"timeStamp\": \"2006-09-08\",\r\n        \"message\": \"this is my WOOWWWWWWWWWWWWw\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/notifications/2/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notifications",
+						"2",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET notifications of user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/notifications/2/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notifications",
+						"2",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all notifications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/notifications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"notifications"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
